@@ -1,0 +1,80 @@
+html{
+  font-size: 16px;
+  font-family: Helvetica;
+  color: gray;
+}
+
+div{
+  display: block;
+}
+
+/* HEADER STYLING */
+
+header{
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+
+.container{
+  margin: 0 1.5rem;
+  width: 100%;
+}
+
+header .container{
+  display: inline-flex;
+  padding: 1rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoname{
+  height: 2rem;
+  display: flex;
+  width: 49%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logoname img{
+  height: 3rem;
+  width: auto;
+}
+
+.logoname h1{
+  font-size: 2rem;
+}
+
+.logoname h1 span{
+  font-weight: bold;
+}
+
+nav .navigator{
+  display: flex;
+  height: 2rem;
+  width: 49%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.navigator ul li{
+  display: inline-flex;
+  padding-left: 1rem;
+}
+
+.navigator ul li a{
+  color: gray;
+  text-decoration: none;
+}
+
+/*Learn Something new everyday */
+
+.section1{
+  padding-top: 4rem;
+  background-color: silver;
+  height: 100rem;
+}
