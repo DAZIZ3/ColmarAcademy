@@ -1,7 +1,7 @@
 html{
   font-size: 16px;
   font-family: Helvetica;
-  color: gray;
+  color: black;
 }
 
 div{
@@ -20,13 +20,13 @@ header{
 }
 
 .container{
-  margin: 0 1.5rem;
+  padding: 0 1.5rem;
   width: 100%;
 }
 
 header .container{
   display: inline-flex;
-  padding: 1rem 0;
+  padding: 1rem 1.5rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -74,7 +74,215 @@ nav .navigator{
 /*Learn Something new everyday */
 
 .section1{
-  padding-top: 4rem;
+  display: flex;
+  padding-top: 6rem;
   background-color: silver;
-  height: 100rem;
+  padding-bottom: 2rem;
+  justify-content: flex-start;
+}
+
+.section1 .container{
+  display: flex;
+}
+
+.section1 .learnimg{
+  display: flex;
+  max-width: 60%;
+  padding-right: 1.5rem;
+}
+
+.help{
+  display: flex;
+  align-items: center;
+  max-width: 30%;
+}
+
+.learn{
+  display: block;
+  line-height: 1.2;
+}
+
+.learn h1{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.learn h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.button{
+  background-color: dimgray;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  max-width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* It doesn't hurt to keep practicing */
+
+.section2{
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: flex-start;
+}
+
+.section2 .container{
+  display: flex;
+}
+
+.practice{
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 60%;
+  padding-right: 1.5rem;
+}
+
+.practiceimg{
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.practice h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.practice p{
+  padding: 1.5rem auto;
+}
+
+.practice h6{
+
+}
+
+.sidebars{
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 40%;
+}
+
+.sidebar{
+  display: flex;
+  padding: 1rem;
+}
+
+.sidebarimg{
+  display: block;
+  height: auto;
+  max-width: 35%;
+}
+
+.sidebarimg img{
+  max-width: 100%;
+}
+
+.sidebartxt{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  max-width: 65%;
+  flex-wrap: wrap;
+}
+
+.sidebartxt h3{
+  display: block;
+  padding: 0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+.sidebartxt p{
+  display: block;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.sidebartxt a{
+  display: block;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+/* Start learning */
+
+.section3{
+  display: flex;
+  background-color: silver;
+}
+
+.section3 .container{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 2rem;
+  width: 100%;
+}
+
+.start1 , .start2{
+  display: flex;
+  width: 100%;
+}
+
+.course{
+  display: flex;
+  width: 33%;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+}
+
+.courseimg{
+  display: flex;
+  width: 100%;
+}
+
+.courseimg img{
+  width: 100%;
+  max-height: auto;
+}
+
+.coursetxt{
+  display: flex;
+  background-color: white;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.coursetxt h2, h6, p{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  width: 100%;
+}
+
+.coursetxt h2{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.coursetxt p{
+  padding-bottom: 1.5rem;
+  line-height: 1.4;
 }
