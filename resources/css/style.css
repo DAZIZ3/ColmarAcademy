@@ -2,10 +2,44 @@ html{
   font-size: 16px;
   font-family: Helvetica;
   color: black;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 1024px) {
+  html{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  html{
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  html{
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  html{
+    font-size: 12px;
+  }
 }
 
 div{
   display: block;
+}
+
+body{
+  display: block;
+  max-width: 1903px;
+  margin: 0 auto;
+  border-left:1px solid #616161;
+  border-right: 1px solid #616161;
+  border-bottom:1px solid #616161;
 }
 
 /* HEADER STYLING */
@@ -14,9 +48,12 @@ header{
   display: flex;
   height: 4rem;
   width: 100%;
+  max-width: 1903px;
   position: fixed;
   z-index: 1;
   background-color: white;
+  border-bottom: 1px solid #616161;
+  margin-top: 0px;
 }
 
 .container{
@@ -46,10 +83,36 @@ header .container{
 
 .logoname h1{
   font-size: 2rem;
+  color: #bdbdbd ;
 }
 
 .logoname h1 span{
+  color: #424242 ;
   font-weight: bold;
+}
+
+.hiddenimage{
+  display: none;
+}
+
+@media only screen and (max-width: 540px) {
+  nav{
+    display: none;
+  }
+
+  .hiddenimage{
+    display: block;
+  }
+
+  .hiddenimage{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logoname{
+    display: none;
+  }
 }
 
 nav .navigator{
@@ -67,8 +130,12 @@ nav .navigator{
 }
 
 .navigator ul li a{
-  color: gray;
+  color: #424242;
   text-decoration: none;
+}
+
+.navigator ul li a:hover{
+  text-decoration: underline;
 }
 
 /*Learn Something new everyday */
@@ -76,19 +143,24 @@ nav .navigator{
 .section1{
   display: flex;
   padding-top: 6rem;
-  background-color: silver;
+  background-color: #bdbdbd;
   padding-bottom: 2rem;
   justify-content: flex-start;
 }
+
 
 .section1 .container{
   display: flex;
 }
 
 .section1 .learnimg{
-  display: flex;
   max-width: 60%;
   padding-right: 1.5rem;
+}
+
+.learnimg img{
+  max-width: 100%;
+  height: auto;
 }
 
 .help{
@@ -107,6 +179,12 @@ nav .navigator{
   font-weight: bold;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  color: #424242;
+}
+
+.learn h1:hover{
+  text-decoration: underline;
+  transition: text-decoration 1s linear;
 }
 
 .learn h3{
@@ -114,27 +192,50 @@ nav .navigator{
   font-weight: bold;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  color: #424242;
 }
 
 .button{
-  background-color: dimgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #424242;
   font-size: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   max-width: 100%;
-  text-align: center;
-  color: white;
-  font-weight: bold;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  border: 1px solid #424242;
+}
+
+.button:hover{
+  background-color: #505050;
+}
+
+.button span{
+  color: white;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 540px){
+  .section1 .learnimg{
+    width: 100%;
+    display: block;
+  }
+
+  .help{
+    display: block;
+    width: 100%;
+  }
 }
 
 /* It doesn't hurt to keep practicing */
 
 .section2{
   display: flex;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   justify-content: flex-start;
 }
 
@@ -155,28 +256,46 @@ nav .navigator{
   padding-bottom: 2rem;
 }
 
+.practiceimg img{
+  max-width: 100%;
+  height: auto;
+}
+
 .practice h1{
   font-size: 2rem;
   font-weight: bold;
+  color: #424242;
+}
+
+.practice h1:hover{
+  text-decoration: underline;
 }
 
 .practice p{
   padding: 1.5rem auto;
+  color: #616161 ;
+  padding-left: 0rem;
 }
 
 .practice h6{
-
+  color: #616161 ;
+  padding-left: 0rem;
 }
 
 .sidebars{
   display: inline-flex;
   flex-direction: column;
   max-width: 40%;
+  border-left: 1px solid #9e9e9e;
 }
 
 .sidebar{
   display: flex;
   padding: 1rem;
+}
+
+.sidebar:hover{
+  background-color: #e0e0e0 ;
 }
 
 .sidebarimg{
@@ -200,28 +319,43 @@ nav .navigator{
 .sidebartxt h3{
   display: block;
   padding: 0.5rem;
+  padding-left: 1rem;
   font-size: 2rem;
   font-weight: bold;
   width: 100%;
+  color: #424242 ;
+}
+
+.sidebartxt h3:hover{
+  text-decoration: underline;
 }
 
 .sidebartxt p{
   display: block;
   padding: 0.5rem;
+  padding-left: 1rem;
   width: 100%;
+  color: #616161 ;
 }
 
 .sidebartxt a{
   display: block;
   padding: 0.5rem;
   width: 100%;
+  padding-left: 1rem;
+  color: #2196f3 ;
+  text-decoration: none;
+}
+
+.sidebartxt a:hover{
+  text-decoration: underline;
 }
 
 /* Start learning */
 
 .section3{
   display: flex;
-  background-color: silver;
+  background-color: #bdbdbd;
 }
 
 .section3 .container{
@@ -233,9 +367,14 @@ nav .navigator{
   display: flex;
   justify-content: center;
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 700;
   padding: 2rem;
   width: 100%;
+  color: #212121;
+}
+
+.header:hover{
+  text-decoration: underline;
 }
 
 .start1 , .start2{
@@ -250,11 +389,19 @@ nav .navigator{
   margin-left: 1rem;
   margin-right: 1rem;
   justify-content: space-around;
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  background-color: white;
+}
+
+.course:hover{
+  background-color: #b0bec5;
+}
+
+.coursetxt h2:hover{
+  text-decoration: underline;
 }
 
 .courseimg{
-  display: flex;
   width: 100%;
 }
 
@@ -265,7 +412,6 @@ nav .navigator{
 
 .coursetxt{
   display: flex;
-  background-color: white;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -275,14 +421,86 @@ nav .navigator{
   flex-wrap: wrap;
   padding: 1rem;
   width: 100%;
+  color: #616161;
 }
 
 .coursetxt h2{
   font-size: 2rem;
   font-weight: bold;
+  color: #424242 ;
 }
 
 .coursetxt p{
   padding-bottom: 1.5rem;
   line-height: 1.4;
+}
+
+.section4{
+  display: flex;
+}
+
+.section4 .container{
+  display: block;
+}
+
+.section4 .header{
+  display: flex;
+  width: 100%;
+}
+
+.section4 .container .header h1{
+  color: #212121;
+  font-weight: bold;
+}
+
+.bodycontainer{
+  display: flex;
+}
+
+.reimagine{
+  display: block;
+  width: 60%;
+}
+
+.reimaginevid{
+  padding: 1.5rem 1.5rem 1.5rem 0;
+}
+
+.reimaginevid video{
+  display: block;
+  width: 100%;
+  border: 1px solid #bdbdbd;
+}
+
+.reimaginetxt h2{
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  color: #424242;
+}
+
+.reimaginetxt h2:hover{
+  text-decoration: underline;
+}
+
+.reimaginetxt p{
+  padding-bottom: 2rem;
+  padding-left: 0;
+}
+
+.section5{
+  display: flex;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  border-top: 1px solid #bdbdbd;
+}
+
+.section5 span{
+  padding: 0.5rem;
+  color: #9e9e9e;
+}
+
+.section5 span:hover{
+  text-decoration: underline;
 }
