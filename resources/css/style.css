@@ -219,14 +219,43 @@ nav .navigator{
 }
 
 @media only screen and (max-width: 540px){
+  .section1{
+    padding-top: 4rem;
+  }
+
   .section1 .learnimg{
-    width: 100%;
+    max-width: 100%;
     display: block;
+    padding-right: 1px;
   }
 
   .help{
     display: block;
-    width: 100%;
+    max-width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .help h1{
+    margin-top: 2.66rem;
+    margin-bottom: 2.66rem;
+  }
+
+  .help h3{
+    margin-bottom: 2rem;
+  }
+
+  .section1 .container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1px;
+    padding-right: 0rem;
+  }
+
+  .button{
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #757575;
   }
 }
 
@@ -351,6 +380,47 @@ nav .navigator{
   text-decoration: underline;
 }
 
+.sidebarmobile{
+  display: none;
+}
+
+@media only screen and (max-width:540px) {
+  .section2{
+    padding-top: 0rem;
+  }
+
+  .practice{
+    display: none;
+  }
+
+  .sidebars{
+    border-left: none;
+    max-width: 100%;
+  }
+
+  .sidebarmobile{
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .sidebar{
+    flex-wrap: wrap;
+  }
+
+  .sidebarmobile img{
+    max-width: 100%;
+  }
+
+  .sidebarimg{
+    display: none;
+  }
+
+  .sidebartxt{
+    max-width: 100%
+  }
+}
+
 /* Start learning */
 
 .section3{
@@ -435,6 +505,50 @@ nav .navigator{
   line-height: 1.4;
 }
 
+@media only screen and (max-width: 540px){
+  .section3{
+    background-color: white;
+    border-top: 1px solid #9e9e9e;
+  }
+
+  .section3 .container{
+    padding: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .start1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .start2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .courseimg{
+    display: none;
+  }
+
+  .coursetxt h6, .coursetxt p{
+    display: none;
+  }
+
+  .course{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #bdbdbd;
+    margin-left: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
 .section4{
   display: flex;
 }
@@ -488,6 +602,33 @@ nav .navigator{
   padding-left: 0;
 }
 
+@media only screen and (max-width:540px) {
+  .section4{
+    border-top: 1px solid #9e9e9e;
+  }
+
+  .section4 .sidebar{
+    display: none;
+  }
+
+  .section4 .reimaginetxt{
+    display: none;
+  }
+
+  .reimagine{
+    width: 100%;
+  }
+
+  .reimaginevid{
+    width: 100%;
+    padding-top: 0rem;
+  }
+
+  .reimaginevid video source{
+    width: 100%;
+  }
+}
+
 .section5{
   display: flex;
   width: 100%;
@@ -503,4 +644,11 @@ nav .navigator{
 
 .section5 span:hover{
   text-decoration: underline;
+}
+
+@media only screen and (max-width:540px) {
+  .section5{
+    padding-top: 3rem;
+    padding-bottom: 1.33rem;
+  }
 }
